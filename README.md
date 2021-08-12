@@ -14,6 +14,16 @@ SQL files with queries are placed in SQL folder.
 - CampaignsWithoutAds.sql -> show all campaigns that do not have any ads
 
 ## Api
+In the "Api" folder located .NET solution EFDI.ApiTask.
+In solution, there is one ASP.NET project that contains Ad Endpoints.
+The project has swagger support.
 
+.net 5 sdk should be installed to build the project.
+
+To start the project in debug mode, run the following command in the folder of the solution.
+
+<code>
+dotnet run
+</code>
 
 ## Application

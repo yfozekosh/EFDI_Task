@@ -350,3 +350,5 @@ MigrationBackup/
 .ionide/
 
 SQL/.idea/
+
+Api/EFDI.ApiTask/.idea/
