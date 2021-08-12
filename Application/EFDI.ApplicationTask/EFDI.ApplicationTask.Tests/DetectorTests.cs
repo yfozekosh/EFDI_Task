@@ -8,7 +8,7 @@ namespace EFDI.ApplicationTask.Tests
 {
     public class DetectorTests : ModuleTestBase
     {
-        private IDetectionService _detector;
+        private readonly IDetectionService _detector;
 
         public DetectorTests()
         {
@@ -19,8 +19,8 @@ namespace EFDI.ApplicationTask.Tests
         [Fact]
         public void ExceptionWhenNoUserAgent()
         {
-            var ex = Assert.Throws<DetectionException>(()=>_detector.Detect(string.Empty));
-            
+            var ex = Assert.Throws<DetectionException>(() => _detector.Detect(string.Empty));
+
             Assert.Null(ex.InnerException);
         }
 
@@ -31,7 +31,7 @@ namespace EFDI.ApplicationTask.Tests
         public void UserAgentChrome_WindowsAndBrowser(string ua, string device, string os)
         {
             var result = _detector.Detect(ua);
-            
+
             Assert.Equal(os, result.OperatingSystem);
             Assert.Equal(device, result.Device);
         }

@@ -18,16 +18,14 @@ namespace EFDI.ApplicationTask.Model
         public DetectionResult Detect(string userAgent)
         {
             if (string.IsNullOrWhiteSpace(userAgent))
-            {
                 throw new DetectionException("Cannot detect device, because no information is provided.");
-            }
-            
+
             DetectionResult result;
 
             try
             {
                 _logger.LogDebug($"Starting detection of \"{userAgent}\"");
-                DeviceDetector detector = new DeviceDetector(userAgent);
+                DeviceDetector detector = new(userAgent);
                 detector.Parse();
 
                 var osInfo = detector.GetOs();

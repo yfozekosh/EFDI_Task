@@ -1,5 +1,3 @@
-using DeviceDetectorNET.Results;
-
 namespace EFDI.ApplicationTask.Model.Contracts
 {
     public class DetectionResult
@@ -11,7 +9,7 @@ namespace EFDI.ApplicationTask.Model.Contracts
         }
 
         public string Device { get; }
-        
+
         public string OperatingSystem { get; }
     }
 }

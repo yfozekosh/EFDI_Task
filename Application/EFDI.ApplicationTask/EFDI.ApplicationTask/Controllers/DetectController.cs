@@ -17,7 +17,7 @@ namespace EFDI.ApplicationTask.Controllers
             _detectionService = detectionService;
             _logger = logger;
         }
-        
+
         [HttpGet]
         public IActionResult Detect()
         {

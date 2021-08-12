@@ -17,8 +17,8 @@ namespace EFDI.ApplicationTask
         }
 
         public IConfiguration Configuration { get; }
-        
-        
+
+
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDeviceDetection();
@@ -26,17 +26,14 @@ namespace EFDI.ApplicationTask
             services.AddControllers();
             services.AddRouting(r => r.LowercaseUrls = true);
 
-            services.AddMvc(options =>
-            {
-                options.Filters.Add<BadRequestExceptionFilter>();
-            });
+            services.AddMvc(options => options.Filters.Add<BadRequestExceptionFilter>());
 
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo {Title = "EFDI.ApplicationTask", Version = "v1"});
             });
         }
-        
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())

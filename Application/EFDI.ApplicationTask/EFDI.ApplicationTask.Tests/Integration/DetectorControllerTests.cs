@@ -7,7 +7,7 @@ namespace EFDI.ApplicationTask.Tests.Integration
 {
     public class DetectorControllerTests : IClassFixture<WebApplicationFactory<Startup>>
     {
-        private HttpClient _client;
+        private readonly HttpClient _client;
 
         public DetectorControllerTests(WebApplicationFactory<Startup> factory)
         {
@@ -18,7 +18,7 @@ namespace EFDI.ApplicationTask.Tests.Integration
         public async Task UserAgentIsParsedFromHeaders()
         {
             _client.DefaultRequestHeaders.Add("User-Agent", UserAgent.ChromeWindows);
-            
+
             // Act
             var response = await _client.GetAsync("Detect");
 

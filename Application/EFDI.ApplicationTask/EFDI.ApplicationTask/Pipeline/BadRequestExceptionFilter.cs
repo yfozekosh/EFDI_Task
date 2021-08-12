@@ -1,3 +1,4 @@
+using System;
 using EFDI.ApplicationTask.Common;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.Extensions.Logging;
@@ -22,7 +23,7 @@ namespace EFDI.ApplicationTask.Pipeline
                 {
                     context.Result = new BadRequestCustomResult(uf.Message);
                 }
-                catch (System.Exception e)
+                catch (Exception e)
                 {
                     _logger.LogInformation($"exception during user friendly exception handling: {e.Message}", e);
                     // ignored.
@@ -36,7 +37,7 @@ namespace EFDI.ApplicationTask.Pipeline
                 {
                     context.Result = new BadRequestCustomResult(context.Exception.ToString());
                 }
-                catch (System.Exception e)
+                catch (Exception e)
                 {
                     _logger.LogInformation($"exception: {e.Message}", e);
                     // ignored.

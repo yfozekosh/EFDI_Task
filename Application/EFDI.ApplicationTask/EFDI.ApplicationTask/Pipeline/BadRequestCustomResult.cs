@@ -17,9 +17,9 @@ namespace EFDI.ApplicationTask.Pipeline
         public override Task ExecuteResultAsync(ActionContext context)
         {
             context.HttpContext.Response.ContentType = "text/html";
-            context.HttpContext.Response.StatusCode = (int)HttpStatusCode.BadRequest;
+            context.HttpContext.Response.StatusCode = (int) HttpStatusCode.BadRequest;
             context.HttpContext.Response.WriteAsync(_message);
-            
+
             return Task.CompletedTask;
         }
     }
