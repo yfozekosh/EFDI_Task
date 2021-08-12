@@ -1,0 +1,24 @@
+<section class="detection">
+  <div class="hint">
+    <p>Please, press button to start detection of your device and operating system.</p>
+  </div>
+  <div class="action">
+    <button *ngIf="!isLoading" (click)="startDetection()">Detect {{isDetectedAlready ? "Again" : ""}}</button>
+    <p *ngIf="isLoading">Loading...</p>
+  </div>
+
+  <div class="result" *ngIf="result$ | async as result">
+    <div class="result-table">
+      <table>
+        <tr>
+          <td>Device</td>
+          <td>{{result.device}}</td>
+        </tr>
+        <tr>
+          <td>Operating system</td>
+          <td>{{result.operatingSystem}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</section>
