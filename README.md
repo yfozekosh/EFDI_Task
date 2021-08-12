@@ -9,7 +9,9 @@
 </table>
 
 ## Sql
-
+SQL files with queries are placed in SQL folder.
+- CampaignsOfAdvertiser.sql -> show all campaigns of advertiser #100 that have more than 50
+- CampaignsWithoutAds.sql -> show all campaigns that do not have any ads
 
 ## Api
 
