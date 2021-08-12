@@ -1,3 +1,5 @@
+using DeviceDetectorNET.Results;
+
 namespace EFDI.ApplicationTask.Model.Contracts
 {
     public class DetectionResult
