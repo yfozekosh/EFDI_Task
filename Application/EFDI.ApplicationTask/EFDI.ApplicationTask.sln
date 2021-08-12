@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDI.ApplicationTask", "EFDI.ApplicationTask\EFDI.ApplicationTask.csproj", "{74131352-DDD7-44A3-9674-D166C8A8E73F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_tests", "_tests", "{BB832FFC-A262-4DFA-98BB-18F518FB6A71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDI.ApplicationTask.Tests", "EFDI.ApplicationTask.Tests\EFDI.ApplicationTask.Tests.csproj", "{12F95DFA-1EBB-4618-AAB4-ACF3A7FC3E72}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{74131352-DDD7-44A3-9674-D166C8A8E73F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{74131352-DDD7-44A3-9674-D166C8A8E73F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{74131352-DDD7-44A3-9674-D166C8A8E73F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{74131352-DDD7-44A3-9674-D166C8A8E73F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12F95DFA-1EBB-4618-AAB4-ACF3A7FC3E72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12F95DFA-1EBB-4618-AAB4-ACF3A7FC3E72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12F95DFA-1EBB-4618-AAB4-ACF3A7FC3E72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12F95DFA-1EBB-4618-AAB4-ACF3A7FC3E72}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{12F95DFA-1EBB-4618-AAB4-ACF3A7FC3E72} = {BB832FFC-A262-4DFA-98BB-18F518FB6A71}
+	EndGlobalSection
+EndGlobal

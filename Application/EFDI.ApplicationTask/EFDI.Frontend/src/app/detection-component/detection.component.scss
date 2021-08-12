@@ -1,0 +1,26 @@
+.detection{
+  margin-top: 200px;
+}
+
+.action{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+
+  .result-table {
+    table, th, td {
+      border: black 1px solid;
+    }
+
+    td{
+      padding: 2px;
+    }
+  }
+}
