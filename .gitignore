@@ -352,3 +352,5 @@ MigrationBackup/
 SQL/.idea/
 
 Api/EFDI.ApiTask/.idea/
+
+Application/EFDI.ApplicationTask/.idea/
