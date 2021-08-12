@@ -21,6 +21,8 @@ namespace EFDI.ApplicationTask
         
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDeviceDetection();
+
             services.AddControllers();
             services.AddRouting(r => r.LowercaseUrls = true);
 
